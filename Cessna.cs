@@ -8,12 +8,12 @@ namespace Garage
 
         public void RefuelTank()
         {
-            // method definition omitted
+            Console.WriteLine($"The Cessna has refueled with {FuelCapacity} gallons!");
         }
 
         public override void Drive()
         {
-            Console.WriteLine("Zoooooom!");
+            Console.WriteLine($"The {MainColor} Cessna with {MaximumOccupancy} passengers flashes by you like a hurricane. Zoooooom!");
         }
     }
 }

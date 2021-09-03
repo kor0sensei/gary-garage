@@ -1,3 +1,5 @@
+using System;
+
 namespace Garage
 {
     public class Zero: Vehicle  // Electric motorcycle
@@ -6,8 +8,12 @@ namespace Garage
 
         public void ChargeBattery()
         {
-            // method definition omitted
+            Console.WriteLine($"The Zero has recharged with {BatteryKWh} KWh!");
+        }
+
+        public override void Drive()
+        {
+            Console.WriteLine($"The {MainColor} Zero with {MaximumOccupancy} passengers zips by you. Yeeeooowww!");
         }
     }
 }
-
