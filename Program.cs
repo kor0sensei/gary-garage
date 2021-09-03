@@ -12,9 +12,25 @@ namespace Garage
             Ram trx1500 = new Ram() { MainColor = "Ruby Red", MaximumOccupancy = 8, FuelCapacity = 30.25 };
 
             fxs.Drive();
+            fxs.Turn("right");
+            fxs.Stop();
+            fxs.ChargeBattery();
+
             modelS.Drive();
+            modelS.Turn("right");
+            modelS.Stop();
+            modelS.ChargeBattery();
+
+
             mx410.Drive();
+            mx410.Turn("left");
+            mx410.Stop();
+            mx410.RefuelTank();
+
             trx1500.Drive();
+            trx1500.Turn("left");
+            trx1500.Stop();
+            trx1500.RefuelTank();
         }
     }
 }
